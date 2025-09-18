@@ -30,7 +30,7 @@ const mailSender = async (email, title, body) => {
     // Send email
     console.log("Sending email to:", email)
     let info = await transporter.sendMail({
-      from: `"StudyNotion | CodeHelp" <${process.env.MAIL_USER}>`,
+      from: `"StudyNotion" <${process.env.MAIL_USER}>`,
       to: `${email}`,
       subject: `${title}`,
       html: `${body}`,
